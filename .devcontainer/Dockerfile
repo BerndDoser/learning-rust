@@ -8,6 +8,9 @@ FROM mcr.microsoft.com/vscode/devcontainers/rust:0-${VARIANT}
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.0.36/quarto-1.0.36-linux-amd64.deb \
+ && sudo apt install ./quarto-1.0.36-linux-amd64.deb
+
 ARG USERNAME=vscode
 ARG USER_UID=1026
 ARG USER_GID=100

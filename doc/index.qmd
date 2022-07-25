@@ -1,0 +1,37 @@
+---
+title: "Learning Rust"
+author: "Bernd Doser"
+date: July 2022
+institute: HITS gGmbH
+format:
+  html:
+    toc: true
+    highlight-style: a11y
+---
+
+## Generic function
+
+We will start with a simple generic function squaring a number.
+
+```Rust
+pub fn square<T>(num: T) -> T {
+    num * num
+}
+
+pub(crate) fn main()
+{
+    let d = 1.5;
+    let e = square(d);
+}
+```
+
+Compiler complains that multiplication `T * T` is not defined and we have to add some type traits. 
+
+```Rust
+pub fn square<T>(num: T) -> T where T: Mul<Output = T> + Copy {
+    num * num
+}
+```
+[CompilerExplorer](https://godbolt.org/z/YMhGc3Yvd)
+
+Linter warns that main is not used [GitHub issue 12327](https://github.com/rust-lang/rust/issues/12327).
