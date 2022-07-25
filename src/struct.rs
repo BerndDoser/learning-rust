@@ -1,3 +1,4 @@
+#[derive(Eq, Ord)]
 pub struct Point<T>
 {
     pub x: T,
@@ -13,7 +14,8 @@ pub fn main()
     let p1 = Point{x: 1.2, y:-2.3};
     let p2 = Point{x: 1.2, y:2.3};
 
-    if p1 > p2 { println!("p1 > p2"); }
+    if p1 == p2 { println!("p1 == p2"); }
+    if p1 >  p2 { println!("p1 >  p2"); }
 
     //println!("{}", a);
 }
