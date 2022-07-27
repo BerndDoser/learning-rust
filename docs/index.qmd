@@ -67,7 +67,7 @@ impl<T: PartialEq> PartialEq for Point<T> {
     }
 }
 ```
-[CompilerExplorer](hhttps://godbolt.org/z/rGqWzEje5)
+[CompilerExplorer](https://godbolt.org/z/rGqWzEje5)
 
 It is also possible to generate the operators automatically by using the `derive` attribute.
 
