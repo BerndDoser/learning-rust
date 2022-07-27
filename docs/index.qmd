@@ -1,7 +1,7 @@
 ---
 title: "Learning Rust"
 author: "Bernd Doser"
-date: July 2022
+date: today
 institute: HITS gGmbH
 format:
   html:
