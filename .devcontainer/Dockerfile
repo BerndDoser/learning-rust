@@ -10,6 +10,8 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     gfortran \
     libopenblas-dev
 
+ENV LD_LIBRARY_PATH /usr/lib/x86_64-linux-gnu/openblas/
+
 RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.0.36/quarto-1.0.36-linux-amd64.deb \
  && sudo apt install ./quarto-1.0.36-linux-amd64.deb
 
