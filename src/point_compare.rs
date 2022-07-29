@@ -10,7 +10,8 @@ impl<T: PartialEq> PartialEq for Point<T> {
     }
 }
 
-fn main()
+#[test]
+fn test()
 {
     let p1 = Point{x: 1.2, y:2.3};
     let p2 = Point{x: 1.2, y:2.3};
