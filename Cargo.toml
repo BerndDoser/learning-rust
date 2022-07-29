@@ -5,5 +5,6 @@ edition = "2021"
 
 [dependencies]
 float-cmp = "0.9.0"
-blas = "0.22.*"
-openblas-src = "0.10.4"
+ndarray = { version = "0.15.4", features = ["blas"] }
+blas-src = { version = "0.8", features = ["openblas"] }
+openblas-src = { version = "0.10", features = ["cblas", "system"] }
