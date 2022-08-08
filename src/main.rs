@@ -1,9 +1,9 @@
-mod square;
-mod point;
 mod blas;
+mod point;
+mod point_compare;
+mod square;
 
-pub(crate) fn main()
-{
+pub(crate) fn main() {
     println!("hey");
     let a = square::square_i32(10);
     println!("{}", a);
