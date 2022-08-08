@@ -7,7 +7,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/rust:0-${VARIANT}
 # [Optional] Uncomment this section to install additional packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
  && apt-get -y install --no-install-recommends \
-    gfortran \
     libopenblas-dev
 
 ENV LD_LIBRARY_PATH /usr/lib/x86_64-linux-gnu/openblas/
