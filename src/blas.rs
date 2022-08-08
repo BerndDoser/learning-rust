@@ -1,11 +1,10 @@
 extern crate openblas_src;
 
-use ndarray::Array1;
 use ndarray::array;
+use ndarray::Array1;
 
 #[test]
-fn test()
-{
+fn test() {
     let a: Array1<f64> = array![
         0.99889651, 0.0150731, 0.28492482, 0.83819218, 0.48413156, 0.80710412, 0.41762936,
         0.22879429, 0.43997224, 0.23831807, 0.02416466, 0.6269962, 0.47420614, 0.56275487,
@@ -21,15 +20,11 @@ fn test()
 }
 
 #[test]
-fn test_matmult()
-{
+fn test_matmult() {
     use ndarray::arr2;
 
-    let a = arr2(&[[1., 2.],
-                [0., 1.]]);
-    let b = arr2(&[[1., 2.],
-                [2., 3.]]);
+    let a = arr2(&[[1., 2.], [0., 1.]]);
+    let b = arr2(&[[1., 2.], [2., 3.]]);
 
-    assert!(a.dot(&b) == arr2(&[[5., 8.],
-                                [2., 3.]]));
+    assert!(a.dot(&b) == arr2(&[[5., 8.], [2., 3.]]));
 }
