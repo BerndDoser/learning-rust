@@ -36,12 +36,12 @@ fn test() {
     let p1 = Point { x: 1.2, y: 2.3 };
     let p2 = Point { x: 1.2, y: 2.3 };
 
-    assert_eq!(p1 == p2, true);
-    assert_eq!(p1 != p2, false);
-    assert_eq!(p1 < p2, false);
-    assert_eq!(p1 > p2, true);
-    assert_eq!(p1 <= p2, false);
-    assert_eq!(p1 <= p2, true);
+    assert!(p1 == p2);
+    assert!(!(p1 != p2));
+    assert!(!(p1 < p2));
+    assert!(!(p1 > p2));
+    assert!(p1 <= p2);
+    assert!(p1 <= p2);
 
     let p3 = p1 + p2;
     assert_eq!(p3, Point { x: 2.4, y: 4.6 });
