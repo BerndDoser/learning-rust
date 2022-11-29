@@ -1,6 +1,8 @@
 mod blas;
-mod point;
+mod borrow;
 mod point_compare;
+mod point;
+mod sparsemat;
 mod square;
 
 pub(crate) fn main() {
