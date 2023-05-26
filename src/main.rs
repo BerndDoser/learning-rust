@@ -4,6 +4,7 @@ mod point_compare;
 mod point;
 mod sparsemat;
 mod square;
+mod sum_type;
 
 pub(crate) fn main() {
     println!("hey");
