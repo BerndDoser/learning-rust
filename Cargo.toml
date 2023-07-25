@@ -4,8 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-blas-src = { version = "0.8", features = ["openblas"] }
+blas-src = { version = "0.9.0", features = ["openblas"] }
 float-cmp = "0.9.0"
 ndarray = { version = "0.15.4", features = ["blas"] }
 openblas-src = { version = "0.10", features = ["cblas", "system"] }
 sprs = "0.11.0"
+ort = "1.15.1"

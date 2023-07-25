@@ -37,7 +37,9 @@
 				"rust-lang.rust-analyzer",
 				"tamasfe.even-better-toml",
 				"serayuzgur.crates",
-				"quarto.quarto"
+				"quarto.quarto",
+				"GitHub.copilot",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	},
