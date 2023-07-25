@@ -1,10 +1,4 @@
-mod blas;
-mod borrow;
-mod point_compare;
-mod point;
-mod sparsemat;
-mod square;
-mod sum_type;
+use learning_rust::square;
 
 pub(crate) fn main() {
     println!("hey");
