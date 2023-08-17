@@ -1,6 +1,6 @@
 # Learning Rust
 
-Cooperation is desired.
+**Collaboration is always welcome.**
 
 Please find the documentation here: https://bernddoser.github.io/learning-rust/
 
