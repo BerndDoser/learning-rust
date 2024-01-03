@@ -7,7 +7,7 @@
 		"args": {
 			// Use the VARIANT arg to pick a Debian OS version: buster, bullseye
 			// Use bullseye when on local on arm64/Apple Silicon.
-			"VARIANT": "buster"
+			"VARIANT": "bullseye"
 		}
 	},
 	"runArgs": [
@@ -32,14 +32,20 @@
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"vadimcn.vscode-lldb",
-				"mutantdino.resourcemonitor",
-				"rust-lang.rust-analyzer",
-				"tamasfe.even-better-toml",
-				"serayuzgur.crates",
-				"quarto.quarto",
+				"alefragnani.numbered-bookmarks",
 				"GitHub.copilot",
-				"streetsidesoftware.code-spell-checker"
+				"github.vscode-github-actions",
+				"mechatroner.rainbow-csv",
+				"mhutchie.git-graph",
+				"mutantdino.resourcemonitor",
+				"nvidia.nsight-vscode-edition",
+				"quarto.quarto",
+				"rust-lang.rust-analyzer",
+				"serayuzgur.crates",
+				"streetsidesoftware.code-spell-checker",
+				"tamasfe.even-better-toml",
+				"vadimcn.vscode-lldb",
+				"ziruiwang.nvidia-monitor"
 			]
 		}
 	},
